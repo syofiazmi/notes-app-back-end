@@ -336,7 +336,7 @@
 							"",
 							"pm.test('when request deleted note', () => {",
 							"    const noteId = pm.environment.get('noteId');",
-							"    pm.sendRequest(`httpL//localhost:5000/notes/${noteId}`, (error, response) => {",
+							"    pm.sendRequest(`http://localhost:5000/notes/${noteId}`, (error, response) => {",
 							"        if(!error) {",
 							"            pm.test('the deleted note should be not found', () => {",
 							"                pm.expect(response.code).to.equals(404);",
